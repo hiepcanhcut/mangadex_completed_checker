@@ -1,4 +1,4 @@
-# 🔄 MangaDex Library Auto-Sorter
+# 🔄 MangaDex Completed Checker
 
 > _Smart library management - Let your manga organize themselves!_
 
@@ -24,8 +24,8 @@ Meet your **personal manga librarian** 🤖! This tool doesn't just follow manga
 
 ### 1. Get the Code
 ```bash
-git clone https://github.com/hiepcanhcut/manga-librarian.git
-cd manga-librarian
+git clone https://github.com/hiepcanhcut/mangadex_completed_checker.git
+cd mangadex_completed_checker
 pip install -r requirements.txt
 ```
 
@@ -49,6 +49,7 @@ export MANGADEX_PASSWORD="your-password"
 
 ### 3. Unleash the Magic ✨
 ```bash
+cd src
 python manga_library_organizer.py
 ```
 
@@ -163,7 +164,8 @@ elif manga.last_update > 6.months.ago:
 
 ```bash
 # Your organized library awaits...
-python manga_librarian.py
+cd src
+python manga_library_organizer.py
 ```
 
 **Your perfectly sorted manga collection is just one command away!** 🚀
