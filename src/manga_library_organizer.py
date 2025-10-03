@@ -2,10 +2,10 @@ import requests
 import time
 
 # ==== Nhập thông tin của bạn ở đây ====
-CLIENT_ID = "personal-client-aded4d19-68d3-4338-af91-55cc05ee1796-c9d0b541"
-CLIENT_SECRET = "yKNgKmhOpgcamcEpYpbT3GhQJeconl3j"
-USERNAME = "ledanghiep123"
-PASSWORD = "hiep3apro"
+CLIENT_ID = os.getenv("MANGADEX_CLIENT_ID") or input("Client ID: ")
+CLIENT_SECRET = os.getenv("MANGADEX_CLIENT_SECRET") or input("Client Secret: ")
+USERNAME = os.getenv("MANGADEX_USERNAME") or input("Username: ")
+PASSWORD = os.getenv("MANGADEX_PASSWORD") or input("Password: ")
 
 def get_token():
     try:
